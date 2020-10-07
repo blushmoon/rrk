@@ -1,0 +1,234 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap&subset=chinese-traditional);
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900|Noto+Sans+TC:100,300,400,500,700,900&display=swap&subset=chinese-simplified,chinese-traditional,cyrillic,vietnamese);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+.faca-body {
+  background-color: white;
+  font-family: NotoSansTC, NotoSansSC, Roboto;
+}
+.carousel .indicators .indicator-item {
+	height: 12px !important;
+  width: 12px !important;
+}
+.carousel .indicators .indicator-item.active {
+	background-color: #9599a2;
+}
+.carousel .indicators .indicator-item {
+	background-color: #d1d4d9;
+}
+.faca-zone3 .carousel .indicators {
+    bottom: -28px;
+}
+.faca-zone4 .carousel .indicators {
+    bottom: 0px;
+}
+
+.faca-ul ul {
+	margin-top: -12px;
+}
+.faca-ul li {
+	list-style-type: disc !important;
+	color: #333843;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 2;
+	margin-left: 20px;
+}
+
+.faca-zone1 {
+  background-image: url("../icon/kv.jpg");
+  height: 560px;
+  background-position: center;
+}
+
+.faca-zone2 {
+  background-image: url("../icon/bg1.jpg");
+  background-repeat-y: no-repeat;
+}
+
+.faca-zone3 {
+	background-color: #f2f2f2;
+	height: 504px;
+}
+.faca-zone3 .carousel-slider {
+  height: 489px !important;
+}
+
+.faca-zone4 {
+	background-image: url("../icon/bg2.jpg");
+  height: 950px;
+  background-position: center;
+}
+.faca-zone4 .carousel-slider {
+  height: 660px !important;
+}
+
+.faca-zone5 {
+	background-image: url("../icon/bg3.jpg");
+  height: 1103px;
+  background-position: center;
+}
+
+.faca-zone6 {
+	background-color: #f2f2f2;
+  padding-bottom: 20px;
+}
+
+.page-footer {
+	background-image: url("../icon/bg4.jpg");
+	height: 565px;
+  position: relative;
+  background-position: center;
+}
+
+.footer-copyright {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  text-align: center;
+  line-height: 1;
+  font-size: 12px;
+  color: #fafafa;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.faca-col {
+  background-color: #FFFFFFFF;
+}
+
+.faca-slogan {
+  color: #fafafa;
+  font-size: 70px;
+  font-weight: 900;
+  line-height: 88px;
+}
+
+.faca-slogan p {
+  margin: 0;
+}
+
+.faca-title {
+  margin-top: 12.5%;
+  color: #39e37e;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 88px;
+}
+
+.faca-fn-title {
+  color: #333843;
+  font-size: 40px;
+  font-weight: bold;
+  padding-top: 47px;
+}
+.faca-fn-title span {
+  color: #006efa;;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  line-height: 1.5;
+  text-decoration:underline;
+ }
+
+.faca-fn-item-title {
+  color: blue;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.faca-fn-item-subtitle {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.45;
+}
+
+.faca-fn-item-desp {
+  color: #333843;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.faca-collapsible {
+	display: none;
+	width: 1290px;
+  border-radius: 10px;
+  background-color: #333843;
+	font-size: 16px;
+  font-weight: 500;
+	color: #fafafa;
+	padding-top: 13px;
+	padding-left: 13px;
+}
+
+.faca-collapsible.open {
+	display: block;
+}
+
+.icon-block p {
+	color: #333843;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.5;
+}
+
+.faca-Rectangle {
+  width: 38px;
+  height: 38px;
+  border-radius: 4px;
+  background-color: #1d6df7;
+  cursor: pointer;
+  z-index: 101;
+  position: absolute;
+}
+
+.faca-button {
+  text-transform: none;
+  height: 60px;
+  border-radius: 34px;
+  background-color: #76b1fb;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 3;
+}
+
+.faca-button.active {
+  background-color: #1d6df7;
+}
+
+
+.faca-button:hover{
+  background-color: #1d6df7;
+}
+
+.faca-table th {
+  background-color: #325f9b;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fcfcfc;
+  padding: 6.6px 0px 7.4px 14.3px;
+  font-family: Lato;
+}
+.faca-table td {
+  padding: 6.6px 0px 7.4px 14.3px;
+}
+
+.faca-table .faca-type {
+  padding: 6.6px 0px 7.4px 14.3px;
+  color: #325f9b;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: Lato;
+  line-height: 1.18;
+}
+.faca-table .faca-desp {
+  padding: 6.6px 0px 7.4px 14.3px;
+  font-family: Lato;
+  font-weight: 300;
+  line-height: 1.18;
+}
+
+table.striped > tbody > tr:nth-child(even) {
+	background-color: #dee6f2;
+}
