@@ -227,6 +227,11 @@
 							<div class="row">
 								<div class="col faca-col s6"
 									style="height: 507px;background-color: #f2f2f2;    background: linear-gradient(-135deg, transparent 22px, #f2f2f2 0), linear-gradient(45deg, transparent 22px, #fff 0);">
+									
+									<div class="row">
+										<div class="col faca-col s6" style="background-color: #f2f2f2;">	
+									
+									
 									<div
 										style="margin-top: 67px;color: #333843;font-size: 20px;font-weight: bold;line-height: 1.45;">
 										Use Case- Smart Retail Stores </div>
@@ -238,6 +243,14 @@
 										provide information security protection and real-time backup on a single
 										platform of smart retail application.
 									</div>
+
+								</div>
+								<div class="col faca-col s6"
+									style="min-height: 0px;background-color: #f2f2f2;background: linear-gradient(-135deg, transparent 22px, #f2f2f2 0), linear-gradient(45deg, transparent 22px, #fff 0);">
+									<img src="icon/retail.png" style="width: 100%;margin-top: 5vw;">
+								</div>
+							</div>
+
 								</div>
 								<div class="col faca-col s6"
 									style="height: 507px;background-color: #f2f2f2;    background: linear-gradient(135deg, transparent 22px, #f2f2f2 0), linear-gradient(45deg, transparent 22px, #fff 0);">
@@ -644,9 +657,11 @@
 	<script type="text/javascript">
 		$(document).ready(function () {
 			$('.collapsible').collapsible();
-			$('.carousel').carousel({
+			var cc = $('.carousel').carousel({
 				fullWidth: true,
-				indicators: true
+				indicators: true,
+				dragged: false,
+				enableTouch: false
 			});
 
 		});
