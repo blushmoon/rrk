@@ -227,29 +227,32 @@
 							<div class="row">
 								<div class="col faca-col s6"
 									style="height: 507px;background-color: #f2f2f2;    background: linear-gradient(-135deg, transparent 22px, #f2f2f2 0), linear-gradient(45deg, transparent 22px, #fff 0);">
-									
-									<div class="row">
-										<div class="col faca-col s6" style="background-color: #f2f2f2;">	
-									
-									
-									<div
-										style="margin-top: 67px;color: #333843;font-size: 20px;font-weight: bold;line-height: 1.45;">
-										Use Case- Smart Retail Stores </div>
-									<div
-										style="margin-top: 30px;color: #333843;font-size: 16px;font-weight: 500;line-height: 1.5;">
-										Integrate the staff management that retail industry transactions needed ( face
-										recognition as the core function), combining people counting, flame/smoke
-										detection, item identification, motion analysis and security image analysis, and
-										provide information security protection and real-time backup on a single
-										platform of smart retail application.
-									</div>
 
-								</div>
-								<div class="col faca-col s6"
-									style="min-height: 0px;background-color: #f2f2f2;background: linear-gradient(-135deg, transparent 22px, #f2f2f2 0), linear-gradient(45deg, transparent 22px, #fff 0);">
-									<img src="icon/retail.png" style="width: 100%;margin-top: 5vw;">
-								</div>
-							</div>
+									<div class="row">
+										<div class="col faca-col s6" style="background-color: #f2f2f2;">
+
+
+											<div
+												style="margin-top: 67px;color: #333843;font-size: 20px;font-weight: bold;line-height: 1.45;">
+												Use Case- Smart Retail Stores </div>
+											<div
+												style="margin-top: 30px;color: #333843;font-size: 16px;font-weight: 500;line-height: 1.5;">
+												Integrate the staff management that retail industry transactions needed
+												( face
+												recognition as the core function), combining people counting,
+												flame/smoke
+												detection, item identification, motion analysis and security image
+												analysis, and
+												provide information security protection and real-time backup on a single
+												platform of smart retail application.
+											</div>
+
+										</div>
+										<div class="col faca-col s6"
+											style="min-height: 0px;background-color: #f2f2f2;background: linear-gradient(-135deg, transparent 22px, #f2f2f2 0), linear-gradient(45deg, transparent 22px, #fff 0);">
+											<img src="icon/retail.png" style="width: 100%;margin-top: 5vw;">
+										</div>
+									</div>
 
 								</div>
 								<div class="col faca-col s6"
@@ -310,22 +313,23 @@
 							src="icon/keyboard_arrow_left-24px.png" style="margin: 7px 7px;"></div>
 					<div class="faca-Rectangle" style="top: 58%;left: 102%" onclick="changeCarousel('next');"><img
 							src="icon/keyboard_arrow_right-24px.png" style="margin: 7px 7px;"></div>
-			
+
 					<div class="hide-on-med-and-down" style="margin-top: 64px;margin-bottom: 73px;">
-						<a class="waves-effect waves-light btn-large faca-button active"
-							onclick="clickCarousel(0)" style="margin-top: 16px">Health care</a>
+						<a class="waves-effect waves-light btn-large faca-button active" onclick="clickCarousel(0)"
+							style="margin-top: 16px" num="0">Health care</a>
 						<a class="waves-effect waves-light btn-large faca-button" onclick="clickCarousel(1)"
-							style="margin-left: 7px;margin-top: 16px">Traditional industry</a>
+							style="margin-left: 7px;margin-top: 16px" num="1">Traditional industry</a>
 						<a class="waves-effect waves-light btn-large faca-button" onclick="clickCarousel(2)"
-							style="margin-left: 7px;margin-top: 16px">Manufacturing industry</a>
+							style="margin-left: 7px;margin-top: 16px" num="2">Manufacturing industry</a>
 					</div>
 					<div class="hide-on-large-only" style="margin-top: 64px;margin-bottom: 73px;">
 						<a class="col s12 waves-effect waves-light btn-large faca-button active"
-							onclick="clickCarousel(0)" style="margin-top: 0px">Health care</a>
+							onclick="clickCarousel(0)" style="margin-top: 0px" num="0">Health care</a>
 						<a class="col s12 waves-effect waves-light btn-large faca-button" onclick="clickCarousel(1)"
-							style="margin-left: 7px;margin-top: 16px">Traditional industry</a>
+							style="margin-left: 7px;margin-top: 16px" num="1">Traditional industry</a>
 						<a class="col s12 waves-effect waves-light btn-large faca-button" onclick="clickCarousel(2)"
-							style="margin-left: 7px;margin-top: 16px;margin-bottom: 16px;">Manufacturing industry</a>
+							style="margin-left: 7px;margin-top: 16px;margin-bottom: 16px;" num="2">Manufacturing
+							industry</a>
 					</div>
 
 					<div class="carousel carousel-slider">
@@ -657,13 +661,12 @@
 	<script type="text/javascript">
 		$(document).ready(function () {
 			$('.collapsible').collapsible();
-			var cc = $('.carousel').carousel({
+			$('.carousel').carousel({
 				fullWidth: true,
 				indicators: true,
 				dragged: false,
 				enableTouch: false
 			});
-
 		});
 		function collapsible() {
 			if ($('.faca-collapsible.open').length > 0) {
@@ -689,6 +692,7 @@
 				action = 'next';
 			}
 
+			current_target = parseInt($(".faca-button.active").attr("num"));
 			if (action == 'next') {
 				current_target = current_target + 1;
 				if (current_target > 2) {
@@ -701,7 +705,8 @@
 				}
 			}
 
-			$('.faca-zone4 .carousel').carousel(action);
+			//$('.faca-zone4 .carousel').carousel(action);
+			$('.faca-zone4 .carousel').carousel('set', current_target);
 
 			$(".faca-button").removeClass("active");
 			$($(".faca-button")[current_target]).addClass("active");
