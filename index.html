@@ -994,11 +994,8 @@
 				$('.carousel').carousel({
 					fullWidth: true,
 					indicators: false,
-					dragged: false,
-					enableTouch: false,
-					onCycleTo: function (data) {
-						console.log("data1", data)
-					}
+					dragged: true,
+					enableTouch: true
 				});
 				current_target = 0;
 				$(".faca-button-group .faca-button").removeClass("active");
@@ -1011,10 +1008,10 @@
 			$('.carousel').carousel({
 				fullWidth: true,
 				indicators: false,
-				dragged: false,
-				enableTouch: false,
+				dragged: true,
+				enableTouch: true,
 				onCycleTo: function (data) {
-					//console.log("data0", $(data).attr("num"))
+					console.log("data0", $(data).attr("num"))
 					var target = $(data).attr("num");
 					$(".faca-button-group .faca-button").removeClass("active");
 					$($(".faca-button-group .faca-button")[target]).addClass("active");
