@@ -69,6 +69,10 @@
   .faca-zone5 .faca-step {
     margin-top: 0px !important;
   }
+
+  .faca-button {
+    margin-left: 0px !important;
+  }
 }
 
 @media only screen and (min-width: 0px) and (max-width: 599px){
@@ -111,6 +115,22 @@
   .faca-footer-solgon {
     margin-top: 12px;
     font-size: 30px !important;
+  }
+
+  .faca-table {
+    font-size: 12px !important;
+  }
+
+  .faca-table th {
+    font-size: 14px !important;
+  }
+
+  .faca-Rectangle {
+    display: none;
+  }
+
+  .faca-button {
+    margin-left: 0px !important;
   }
 }
 
