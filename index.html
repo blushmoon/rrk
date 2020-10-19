@@ -1011,12 +1011,12 @@
 				dragged: true,
 				enableTouch: true,
 				onCycleTo: function (data) {
-					console.log("data0", $(data).attr("num"))
-					var target = $(data).attr("num");
+					var t = $(data).attr("num");
+					$('.faca-zone4 .faca-fn-title').html("data="+t);
 					$(".faca-button-group .faca-button").removeClass("active");
-					$($(".faca-button-group .faca-button")[target]).addClass("active");
+					$($(".faca-button-group .faca-button")[t]).addClass("active");
 					$(".faca-button-group2 .faca-button").removeClass("active");
-					$($(".faca-button-group2 .faca-button")[target]).addClass("active");
+					$($(".faca-button-group2 .faca-button")[t]).addClass("active");
 				}
 			});
 		});
