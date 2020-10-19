@@ -182,7 +182,7 @@
 						<img src="icon/MEC_img.png" style="margin-top: 24px;width: 100%;padding: 16px;">
 					</div>
 
-					<div class="row" style="margin-top: 24px;padding-top:50px;">
+					<div class="row" style="margin-top: 0px;padding-top:50px;">
 						<div class="col s12 m12 l8 xl8" style="text-align: justify;">
 							<div class="faca-fn-item-subtitle" style="color: #02d26a;">
 								Enable your AIoT applications deploy fast on edge computing structure
@@ -522,9 +522,9 @@
 
 					<div class="carousel carousel-slider"
 						style="background-color: #333843;border-radius: 10px;color:#fafafa">
-						<div class="carousel-item" href="#one!">
+						<div class="carousel-item" href="#one!" num="0">
 							<div class="row zone4-one">
-		
+
 								<div class="col faca-col s12 m12 l12 lg12" style="height: 600px;padding: 36px">
 									<div style="color: #fafafa;font-size: 20px;line-height: 1.45;">
 										High Efficiency
@@ -554,7 +554,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="carousel-item" href="#two!">
+						<div class="carousel-item" href="#two!" num="1">
 							<div class="row zone4-two">
 								<div class="col faca-col s12 m12 l12 lg12" style="height: 600px;padding: 36px">
 
@@ -605,7 +605,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="carousel-item" href="#three!">
+						<div class="carousel-item" href="#three!" num="2">
 							<div class="row zone4-three">
 								<div class="col faca-col s12 m12 l12 lg12" style="height: 600px;padding: 36px">
 
@@ -993,7 +993,10 @@
 					fullWidth: true,
 					indicators: false,
 					dragged: false,
-					enableTouch: false
+					enableTouch: false,
+					onCycleTo: function (data) {
+						console.log("data1", data)
+					}
 				});
 				current_target = 0;
 				$(".faca-button-group .faca-button").removeClass("active");
@@ -1007,7 +1010,15 @@
 				fullWidth: true,
 				indicators: false,
 				dragged: false,
-				enableTouch: false
+				enableTouch: false,
+				onCycleTo: function (data) {
+					//console.log("data0", $(data).attr("num"))
+					var target = $(data).attr("num");
+					$(".faca-button-group .faca-button").removeClass("active");
+					$($(".faca-button-group .faca-button")[target]).addClass("active");
+					$(".faca-button-group2 .faca-button").removeClass("active");
+					$($(".faca-button-group2 .faca-button")[target]).addClass("active");
+				}
 			});
 		});
 		function collapsible() {
