@@ -997,12 +997,11 @@
 					dragged: true,
 					enableTouch: true,
 					onCycleTo: function (data) {
-						var t = $(data).attr("num");
-						$('.faca-zone4 .faca-fn-title').html("data=" + t);
+						var target = $(data).attr("num");
 						$(".faca-button-group .faca-button").removeClass("active");
-						$($(".faca-button-group .faca-button")[t]).addClass("active");
+						$($(".faca-button-group .faca-button")[target]).addClass("active");
 						$(".faca-button-group2 .faca-button").removeClass("active");
-						$($(".faca-button-group2 .faca-button")[t]).addClass("active");
+						$($(".faca-button-group2 .faca-button")[target]).addClass("active");
 					}
 				});
 				current_target = 0;
@@ -1019,12 +1018,11 @@
 				dragged: true,
 				enableTouch: true,
 				onCycleTo: function (data) {
-					var t = $(data).attr("num");
-					$('.faca-zone4 .faca-fn-title').html("data=" + t);
+					var targett = $(data).attr("num");
 					$(".faca-button-group .faca-button").removeClass("active");
-					$($(".faca-button-group .faca-button")[t]).addClass("active");
+					$($(".faca-button-group .faca-button")[target]).addClass("active");
 					$(".faca-button-group2 .faca-button").removeClass("active");
-					$($(".faca-button-group2 .faca-button")[t]).addClass("active");
+					$($(".faca-button-group2 .faca-button")[target]).addClass("active");
 				}
 			});
 		});
