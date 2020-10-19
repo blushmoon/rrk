@@ -81,6 +81,10 @@
 }
 
 @media only screen and (min-width: 0px) and (max-width: 599px){
+  .faca-fn-title {
+    font-size: 35px !important;
+  }
+
   .faca-zone3-a2-1-gap {
     margin-top: 15px !important;
   }
@@ -137,6 +141,16 @@
   .faca-button {
     margin-left: 0px !important;
   }
+
+  .carousel-item-img {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 420px){
+  .faca-fn-title span {
+    display: block;
+  }
 }
 
 .video-wrapper{
@@ -148,7 +162,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 98.5%;
   height: 100%;
 }
 
@@ -284,8 +298,32 @@
 
   background-position: center;
 }
-.faca-zone4 .carousel-slider {
+.faca-zone4 .zone4-one {
+  background-image: url("../icon/01b.jpg");
+  background-repeat-y: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+.faca-zone4 .zone4-two {
+  background-image: url("../icon/02b.jpg");
+  background-repeat-y: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+.faca-zone4 .zone4-three {
+  background-image: url("../icon/03b.jpg");
+  background-repeat-y: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
 
+.carousel-item .col {
+  background-color: #333843;
+  opacity: 0.85;
+  height: 100%;
 }
 
 .faca-zone5 .faca-step {
