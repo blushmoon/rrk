@@ -81,6 +81,11 @@
 }
 
 @media only screen and (min-width: 0px) and (max-width: 599px){
+  .faca-slogan {
+    font-size: 48px !important;
+    line-height: 64px !important;
+  }
+  
   .faca-fn-title {
     font-size: 35px !important;
   }
@@ -197,7 +202,6 @@
 	font-weight: 500;
 	line-height: 2;
   margin-left: 20px;
-  text-align: justify;
 }
 
 .faca-zone1 {
@@ -295,8 +299,10 @@
 
 .faca-zone4 {
 	background-image: url("../icon/bg2.jpg");
-
   background-position: center;
+  margin-top: -20px;
+  height: 780px;
+  background-size: cover;
 }
 .faca-zone4 .zone4-one {
   background-image: url("../icon/01b.jpg");
@@ -450,7 +456,6 @@
 	font-size: 16px;
 	font-weight: 500;
   line-height: 1.5;
-  text-align: justify;
 }
 
 .faca-Rectangle {
